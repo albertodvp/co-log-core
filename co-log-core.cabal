@@ -44,13 +44,14 @@ tested-with:         GHC == 8.2.2
                      GHC == 9.6.6
                      GHC == 9.8.4
                      GHC == 9.10.1
+                     GHC == 9.12.1
 
 source-repository head
   type:                git
   location:            https://github.com/co-log/co-log-core.git
 
 common common-options
-  build-depends:       base >= 4.10.1.0 && < 4.21
+  build-depends:       base >= 4.10.1.0 && < 4.22
 
   ghc-options:         -Wall
                        -Wcompat
