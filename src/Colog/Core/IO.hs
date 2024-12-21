@@ -33,11 +33,11 @@ module Colog.Core.IO
        , logFlush
        ) where
 
-import Colog.Core.Action      (LogAction (..))
-import Control.Monad.IO.Class (MonadIO, liftIO)
-import Data.Semigroup         ((<>))
-import System.IO              (Handle, IOMode (AppendMode), hFlush, hPrint,
-                               hPutStrLn, stderr, withFile)
+import           Colog.Core.Action      (LogAction (..))
+import           Control.Monad.IO.Class (MonadIO, liftIO)
+import           Data.Semigroup         ((<>))
+import           System.IO              (Handle, IOMode (AppendMode), hFlush,
+                                         hPrint, hPutStrLn, stderr, withFile)
 
 
 {- $setup
